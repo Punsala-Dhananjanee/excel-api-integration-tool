@@ -1,5 +1,19 @@
 apis:
-  - name: "Public Posts"
+  - name: "Users"
+    url: "https://jsonplaceholder.typicode.com/users"
+    method: "GET"
+    params: {}
+    headers: {}
+    sheet_name: "Users"
+    columns:
+      - { source: "id",           header: "ID" }
+      - { source: "name",         header: "Name" }
+      - { source: "email",        header: "Email" }
+      - { source: "phone",        header: "Phone" }
+      - { source: "website",      header: "Website" }
+      - { source: "company.name", header: "Company" }
+
+  - name: "Posts"
     url: "https://jsonplaceholder.typicode.com/posts"
     method: "GET"
     params: {}
@@ -10,20 +24,6 @@ apis:
       - { source: "userId", header: "User ID" }
       - { source: "title",  header: "Title" }
       - { source: "body",   header: "Body" }
-
-  - name: "Public Users"
-    url: "https://jsonplaceholder.typicode.com/users"
-    method: "GET"
-    params: {}
-    headers: {}
-    sheet_name: "Users"
-    columns:
-      - { source: "id",       header: "ID" }
-      - { source: "name",     header: "Name" }
-      - { source: "email",    header: "Email" }
-      - { source: "phone",    header: "Phone" }
-      - { source: "website",  header: "Website" }
-      - { source: "company.name", header: "Company" }
 
 excel:
   output_dir: "data/output"

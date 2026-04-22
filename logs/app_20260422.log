@@ -51,3 +51,13 @@
 [2026-04-22 14:36:13] DEBUG    src.excel_writer - Sheet 'Users' written (10 rows, 6 cols)
 [2026-04-22 14:36:13] INFO     src.excel_writer - Workbook saved: data/output\api_data.xlsx
 [2026-04-22 14:36:13] INFO     __main__ - [OK] Data saved to: data/output\api_data.xlsx
+[2026-04-22 14:54:56] INFO     src.config - Config loaded from: config.yaml
+[2026-04-22 14:54:56] INFO     __main__ - Starting one-time data fetch...
+[2026-04-22 14:54:56] INFO     src.fetcher - Fetching: Users
+[2026-04-22 14:54:56] INFO     src.fetcher -   -> 10 rows fetched
+[2026-04-22 14:54:56] INFO     src.fetcher - Fetching: Posts
+[2026-04-22 14:54:57] INFO     src.fetcher -   -> 100 rows fetched
+[2026-04-22 14:54:57] DEBUG    src.excel_writer - Sheet 'Users' written (10 rows, 6 cols)
+[2026-04-22 14:54:57] DEBUG    src.excel_writer - Sheet 'Posts' written (100 rows, 4 cols)
+[2026-04-22 14:54:57] INFO     src.excel_writer - Workbook saved: data/output\api_data.xlsx
+[2026-04-22 14:54:57] INFO     __main__ - [OK] Data saved to: data/output\api_data.xlsx
